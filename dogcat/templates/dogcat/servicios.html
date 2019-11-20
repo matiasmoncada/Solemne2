@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+    <head>
+    	<title> Little Friend - Servicios </title>
+    	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        
+        <!--Seccion para enlazar a otras hojas-->
+        
+        <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+        <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="index.html">
+        <link rel="stylesheet" href="contacto.html">
+        <link rel="stylesheet" href="nosotros.html">
+
+    </head>
+    
+    <body>
+        
+        <!-- Primera parte de la pagina y menu -->
+        
+        <header>
+            <div class="contenedor">
+                <h1> <img src="Img/Logo.png" align="left"> Little Friend </h1>
+                <input type="checkbox" id="menu-bar">
+                <label class="icon-menu" for="menu-bar"></label>
+                <nav class="menu">
+                    <a href="index.html"> Inicio </a>
+                    <a href="nosotros.html"> Nosotros </a>
+                    <a href="servicios.html"> Servicios </a>
+                    <a href="contacto.html"> Contacto </a>
+                </nav>
+            </div>
+        </header>
+        
+        <h2 id="tit-servicios"> Servicios </h2>
+        <br>
+        <p id="Descripcion"> En la clinica veterinaria Little Friend contamos con distintos servicios con el fin de satisfacer todas las necesidades de nuestros pacientes.</p>
+        
+        <br>
+        <br>
+        
+        <section id="servicios">
+            <div>
+                <h3> Consulta </h3>
+                <p id="descripcion"> Contamos con toda la atencion necesaria para poder atender a todos nuestros pacientes, tenemos todas las consultas necesarias para poder llevar a cabo la mejora atencion, tenemos los suministros necesarios, vacunas, insertamos chips, especialidad felina y atención a domicilio. </p>
+                <img src="Img/6.jpg">
+                <br><br>
+                <h3> Urgencia  </h3>
+                <p id="descripcion"> Atendemos todo tipo de urgencia las 24 horas del día, contamos con el instrumental necesario para hacer examenes, hospitalización, cirugias, etc. </p>
+                <img src="Img/7.jpg">
+                <br><br>
+                <h3> Accesorios </h3>
+                <p id="descripcion"> Vendemos todo tipo de accesorios para sus mascotas, camas, platos de comida, premios, juguetes, arnes de paseo, collares, etc. </p>
+                <img src="Img/8.jpg">
+                <br><br>
+                <h3> Peluqueria </h3>
+                <p id="descripcion"> Hacemos cortes de pelo, baños sanitarios, corte de uñas, limpieza de oidos, baño higiénico, etc. </p>
+                <img src="Img/9.jpg">
+                <br><br>
+                <h3> Alimento </h3>
+                <p id="descripcion"> En Little Friend tenemos el mejor alimento para su mascota, las mejores marcas. Tenemos alimento para todo tipo de perro, adulto, cachorro, raza pequeña y raza grande. </p>
+                <img src="Img/10.jpg">
+                <br><br>
+            </div>
+        </section>
+    
+        <br><br><br><br><br>
+        
+        <!-- Parte final de la pagina -->
+        <footer>
+                <div class="datos">
+                    <p class="copy"> Little Friend &copy; 2019</p>
+                    <div class="redes">
+                        <a class="icon-facebook-squared" href="#"></a>
+                        <a class="icon-twitter" href="#"></a>
+                        <a class="icon-instagram" href="#"></a>
+                        <a class="icon-whatsapp" href="#"></a>
+                        <h4 class="icon-location">Antonio Varas 666, Providencia</h4>
+                        <h4 class="icon-phone"> +569 40754488</h4>
+                    </div>
+                </div>
+            </footer>
+    </body>
+</html>

@@ -2,7 +2,7 @@
 {% load static %}
 <html lang="es">
     <head>
-    	<title> Little Friend </title>
+    	<title> Little Friend - Contacto </title>
     	<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
         
@@ -13,7 +13,17 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="servicios.html">
-        <link rel="stylesheet" href="contacto.html">
+        <link rel="stylesheet" href="index.html">
+        <link rel="stylesheet" href="css/formulario.css">
+         <link rel="stylesheet" href="nosotros.html">
+
+
+        
+        <script
+	   src="https://code.jquery.com/jquery-3.4.1.js"
+	   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	   crossorigin="anonymous"></script>
+        <script src="js/validar-form.js"></script>
         
     </head>
     
@@ -23,7 +33,7 @@
         
         <header>
             <div class="contenedor">
-                <h1><img src="Img/Logo.png" align="left"> Little Friend </h1>
+                <h1> <img src="Img/Logo.png" align="left"> Little Friend </h1>
                 <input type="checkbox" id="menu-bar">
                 <label class="icon-menu" for="menu-bar"></label>
                 <nav class="menu">
@@ -35,36 +45,42 @@
             </div>
         </header>
         
-        <!-- Creacion imagenes que se corren -->
-        
-        <main>
-            <section id="banner">
-                <div class="slider">
-                    <ul>
-				        <li><img src="Img/1.jpg" alt=""></li>
-                        <li><img src="Img/2.jpg" alt=""></li>
-                        <li><img src="Img/3.jpg" alt=""></li>
-                        <li><img src="Img/4.jpg" alt=""></li>
-			         </ul>
-		          </div>
-            </section>
-            
+        <div class="formulario">
+            	<form id="form_contacto" method="POST" 
+					action="procesar.php">
+				<h1 id="titulo">Contáctanos</h1>
+				<br><br>
+				<span class="error" id="mensaje_nombre_completo">
+				</span>
+                <br><br>
+				<input type="text" name="nombre_completo" class="input_formulario">
+				<label for="nombre_completo" class="label_formulario">
+					Nombre Completo
+				</label>
+				
+				<span class="error" id="mensaje_correo_invalido">
+				</span>
+				<input type="email" name="correo" class="input_formulario">
+				<label for="correo" class="label_formulario">
+					Correo electronico
+				</label>
+				
+				<span class="error" id="mensaje_telefono_invalido">
+				</span>
+				<input type="tel" name="telefono" class="input_formulario">
+				<label for="telefono" class="label_formulario">
+					Teléfono
+				</label>
+				
+				<textarea name="mensaje" id="textarea_formulario"></textarea>
+                <label for="mensaje" class="label_formulario">Mensaje</label>
+            	<div id="cont_bot">   
+                <button type="reset" class="boton_formulario">Limpiar</button>
+				<button type="submit" class="boton_formulario">Enviar</button>
+           		</div>
+           		</form>
+            </div>
             <br>
-            
-            <!-- Creacion del resto de la pagina -->
-            
-            <section id="Bienvenidos">
-                <h2> ¡Bienvenidos a la clinica veterinaria Little Fiend!</h2>
-                <p>La clinica veterinaria Little Friend es un establecimiento con el compromiso de brindarle la mejor atención a todos nuestros pacientes con la mayor dedicación y compromiso otorgandoles un servicio de alta calidad, con un gran equipo de especialistas. </p>
-                <br>
-            </section>
-            
-            <br>
-            
-            
-            
-            <!-- Creacion parte final de la pagina -->
-            
             <footer>
                 <div class="datos">
                     <p class="copy"> Little Friend &copy; 2019</p>
@@ -78,6 +94,5 @@
                     </div>
                 </div>
             </footer>
-        </main>
     </body>
 </html>
